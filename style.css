@@ -1,0 +1,841 @@
+html,
+body,
+div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+abbr,
+address,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+samp,
+small,
+strong,
+sub,
+sup,
+var,
+b,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+body {
+    line-height: 1;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+nav ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+a {
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+
+/* change colours to suit your needs */
+
+ins {
+    background-color: #ff9;
+    color: #000;
+    text-decoration: none;
+}
+
+
+/* change colours to suit your needs */
+
+mark {
+    background-color: #ff9;
+    color: #000;
+    font-style: italic;
+    font-weight: bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title],
+dfn[title] {
+    border-bottom: 1px dotted;
+    cursor: help;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+/* change border colour to suit your needs */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #cccccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+input,
+select {
+    vertical-align: middle;
+}
+
+
+/* My Code */
+
+* {
+    text-decoration: none;
+}
+
+main {
+    padding-top: 100px;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    background-color: #fff;
+    width: 100%;
+    height: 100px;
+    z-index: 10;
+}
+
+header .header-brand {
+    background-image: url(images/awa.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100px;
+    display: block;
+    margin: 0, auto;
+    padding-top: 70px;
+}
+
+header nav ul {
+    display: block;
+    margin: 0 auto;
+    width: fit-content;
+}
+
+header nav ul li {
+    display: inline-block;
+    list-style: none;
+    padding: 0 9px;
+}
+
+header nav ul li a {
+    font-family: Calibri, arial, sans-serif;
+    font-size: 16px;
+    color: #111;
+    font-weight: 500;
+}
+
+header .header-cases {
+    display: none;
+}
+
+@media only screen and (min-width: 1000px) {
+    header .header-brand {
+        background-image: url(images/awa.png);
+        background-size: cover;
+        background-position: left;
+        background-repeat: no-repeat;
+        background-size: 100px;
+        display: block;
+        padding: 50px;
+        margin-left: 30px;
+        float: left;
+    }
+    header nav ul {
+        margin: 20px 0;
+        float: left;
+        padding-left: 30px
+    }
+    header nav ul li {
+        display: inline-block;
+        list-style: none;
+        padding: 0 16px;
+    }
+    header nav ul li a {
+        font-size: 25px;
+        line-height: 50px;
+        font-weight: 600;
+    }
+    .nav-services {
+        border-left: 3px solid #111;
+        padding-left: 30px;
+    }
+    header nav ul li a:hover {
+        border-bottom: 2px solid #404008;
+        color: #404008;
+    }
+}
+
+
+/*INDEX*/
+
+.index-banner {
+    width: 100%;
+    height: calc(100vh - 100px);
+    background-image: url(images/engine1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: table;
+    margin-bottom: 10px;
+}
+
+.vertical-center {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.index-banner h2 {
+    font-family: arial, sans-serif;
+    font-size: 40px;
+    color: white;
+    text-align: center;
+    text-shadow: 1px 1px 10px black;
+    padding: 20px 15px;
+    line-height: 45px;
+}
+
+.index-banner h1 {
+    font-family: arial, sans-serif;
+    font-size: 20px;
+    color: white;
+    text-shadow: 1px 1px 10px black;
+    text-align: center;
+    padding: 20px 15px;
+}
+
+.index-links div {
+    margin: 10px 10px;
+    width: calc(100% -32px);
+    height: 100px;
+    background-color: #4D4D4D;
+}
+
+.index-links div h3 {
+    font-family: arial, sans-serif;
+    font-size: 25px;
+    color: white;
+    text-align: center;
+    line-height: 100px;
+    font-weight: 500;
+}
+
+@media only screen and (min-width: 1000px) {
+    .wrapper {
+        width: 1200px;
+        margin: 0 auto;
+    }
+    .index-banner h1 {
+        display: block;
+        width: 1000px;
+        margin: 0 auto;
+        font-size: 40px;
+        padding: 60px;
+        text-shadow: 4px 4px 3px black;
+    }
+    .index-banner h2 {
+        font-size: 60px;
+        padding: 60px;
+        text-shadow: 4px 4px 3px black;
+    }
+    .index-links {
+        overflow: hidden;
+        margin-bottom: 10px
+    }
+    .index-links div {
+        height: 180px;
+        float: left;
+    }
+    .index-boxlink-services {
+        width: 580px;
+    }
+    .index-boxlink-services:hover {
+        background-image: url(buttons/services.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+    .index-boxlink-projects {
+        width: 580px;
+    }
+    .index-boxlink-projects:hover {
+        background-image: url(buttons/projects.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+    .index-boxlink-booking {
+        width: 850px;
+    }
+    .index-boxlink-booking:hover {
+        background-image: url(buttons/comingsoon.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+    .index-boxlink-contact {
+        width: 310px;
+    }
+    .index-boxlink-contact:hover {
+        background-image: url(buttons/contact.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+    .index-links div h3 {
+        line-height: 180px;
+        font-size: 40px;
+    }
+}
+
+
+/* footer*/
+
+footer {
+    width: calc(100% - 80px);
+    padding: 15px 40px;
+    margin-top: 20px;
+    background-color: #111;
+    overflow: hidden;
+    position: relative;
+    bottom: 0;
+    margin: 0px auto;
+}
+
+footer ul {
+    width: fit-content;
+    float: left;
+}
+
+footer ul li {
+    display: block;
+    list-style: none;
+}
+
+footer ul li a {
+    font-family: Calibri, arial, sans-serif;
+    font-size: 15px;
+    color: white;
+    line-height: 18px;
+}
+
+.footer-sm {
+    width: 45px;
+    float: right;
+    margin-top: 2px;
+    padding-right: 5px;
+}
+
+.footer-sm img {
+    width: 100%;
+}
+
+.copyright {
+    display: block;
+    list-style: none;
+    font-family: Calibri, arial, sans-serif;
+    font-size: 8px;
+    color: white;
+    line-height: 30px;
+}
+
+@media only screen and (min-width: 1000px) {
+    footer ul li a {
+        font-family: Calibri, arial, sans-serif;
+        font-size: 25px;
+        color: white;
+        line-height: 35px;
+    }
+    .footer-sm {
+        width: 70px;
+        margin-top: 5px;
+        padding-right: 20px;
+    }
+}
+
+
+/* projects page */
+
+
+/*this page is for any projects that the garage is or has worked on*/
+
+.projects-links {
+    overflow: hidden;
+}
+
+.projects-links .projects-link {
+    margin-bottom: 16px;
+    margin-left: 16px;
+    margin-right: 16px;
+    width: calc(100% -32px);
+    height: 176px;
+    background-color: #4D4D4D;
+    display: grid;
+    overflow: hidden;
+}
+
+.projects-links .projects-link p {
+    text-align: right;
+    line-height: 200px;
+    font-size: 30px;
+    font-family: calibri, arial, sans-serif;
+    color: white;
+    text-align: right;
+    padding-right: 20px;
+}
+
+.landrover {
+    background-image: url(projects/landrover/landrover.png);
+    background-repeat: no-repeat;
+    background-position: -20px;
+    background-size: cover;
+}
+
+.morrisminor {
+    background-image: url(projects/landrover/landrover.png);
+    background-repeat: no-repeat;
+    background-position: -20px;
+    background-size: cover;
+}
+
+@media only screen and (min-width: 1000px) {
+    .projects-links .projects-link {
+        float: left;
+        width: 380px;
+        height: 280px;
+        margin: 0 10px auto;
+        margin-bottom: 20px;
+    }
+    .projects-links .projects-link p {
+        line-height: 280px;
+        font-size: 30px;
+    }
+    .projects-links .projects-link p:hover {
+        text-decoration: underline;
+    }
+}
+
+
+/* contact page */
+
+.contact-banner {
+    width: 100%;
+    height: 100px;
+    background-color: #4D4D4D;
+    display: table;
+    text-decoration: none;
+}
+
+.vertical-center {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.contact-banner h2 {
+    font-family: calibri, arial, sans-serif;
+    font-size: 18px;
+    color: white;
+    text-align: center;
+    text-shadow: 1px 1px 10px black;
+    padding: 10px 15px;
+    line-height: 20px;
+}
+
+.contact-banner h2 a {
+    color: white;
+}
+
+.contact-links div {
+    margin: 16px 16px 0;
+    width: calc(100% -32px);
+    height: 100px;
+    background-color: #4D4D4D;
+}
+
+.map-responsive {
+    overflow: hidden;
+    padding-bottom: 52%;
+    height: 0;
+    margin-top: 21px;
+    position: relative;
+}
+
+.map-responsive iframe {
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+
+
+/* contact form */
+
+.form-container {
+    display: grid;
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+    background-position: center;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    font-family: calibri, arial, sans-serif;
+    color: #404008;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.input1 {
+    width: 300px;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 3px;
+    border-color: #4D4D4D;
+}
+
+.input2 {
+    width: 300px;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 3px;
+    border-color: #4D4D4D;
+}
+
+.input3 {
+    width: 300px;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 3px;
+    border-color: #4D4D4D;
+}
+
+.input4 {
+    width: 303px;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 3px;
+    border-color: #4D4D4D;
+}
+
+.input5 {
+    width: 300px;
+    height: 150px;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 3px;
+    border-color: #4D4D4D;
+}
+
+.input6 {
+    width: 307px;
+    height: 50px;
+    font-weight: 700;
+    font-size: 16px;
+    color: white;
+    border-width: 2px;
+    border-radius: 3px;
+    border-style: solid;
+    border-color: #4D4D4D;
+    background-color: #4D4D4D;
+}
+
+@media only screen and (min-width: 1000px) {
+    .map-responsive {
+        height: 560px;
+        padding-bottom: 0%;
+        margin-bottom: 20px;
+    }
+    .contact-banner h2 {
+        font-size: 30px;
+        padding-bottom: 56.25%;
+        padding: 25px 15px;
+        line-height: 25px;
+    }
+    .contact-banner {
+        height: 300px;
+    }
+}
+
+
+/* case page */
+
+.case {
+    width: calc(100% - 32px);
+    margin: 0 auto;
+    background-image: url(projects/landrover/landrover.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: #4d4d4d;
+    height: 200px;
+    font-family: calibri, arial, sans-serif;
+    margin-bottom: 1px;
+}
+
+.case h2 {
+    padding-top: 15px;
+    padding-right: 20px;
+    font-family: calibri, arial, sans-serif;
+    color: white;
+    text-align: right;
+    line-height: 40px;
+    font-size: 20px;
+}
+
+.case-text {
+    font-family: calibri, arial, sans-serif;
+    color: #4d4d4d;
+    margin: 30px 0 30px;
+    margin-top: 40px;
+    font-weight: 600;
+    font-size: 15px;
+    float: left;
+}
+
+@media only screen and (min-width: 1000px) {
+    .case {
+        height: 280px;
+        font-family: calibri, arial, sans-serif;
+        background-size: 55%;
+        background-position: 0;
+    }
+    .case h2 {
+        padding-top: 18px;
+        padding-right: 70px;
+        font-size: 30px;
+        line-height: 60px;
+    }
+    .case-text {
+        font-size: 30px;
+        margin: 35px 0 20px;
+    }
+}
+
+
+/*services*/
+
+.services-links div {
+    margin-left: 16px;
+    margin-right: 16px;
+    margin-bottom: 16px;
+    width: calc(100% -32px);
+    height: 100px;
+    background-color: #4D4D4D;
+}
+
+.services-links div h3 {
+    font-family: arial, sans-serif;
+    font-size: 25px;
+    color: white;
+    text-align: center;
+    line-height: 100px;
+    font-weight: 500;
+}
+
+@media only screen and (min-width: 1000px) {
+    .services-links {
+        overflow: hidden;
+    }
+    .services-links div {
+        margin: 0 10px 0;
+        height: 180px;
+        float: left;
+        margin-bottom: 20px;
+    }
+    .services-boxlink-mid {
+        width: 580px;
+    }
+    .services-boxlink-tiny {
+        width: 250px;
+    }
+    .services-boxlink-large {
+        width: 850px;
+    }
+    .services-boxlink-small {
+        width: 310px;
+    }
+    .services-links div h3 {
+        line-height: 180px;
+        font-size: 30px;
+    }
+    .services-links div h3:hover {
+        color: rgba(0, 0, 0, 0)
+    }
+    /* service hover icons to be placed here */
+    .audio:hover {
+        background-image: url(buttons/icons/white/audioicon.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 130px;
+    }
+    .batteries:hover {
+        background-image: url(buttons/icons/white/batteryicon.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 130px;
+    }
+    .brakes:hover {
+        background-image: url(buttons/icons/white/brakesicon.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 130px;
+    }
+    .diagnostics:hover {
+        background-image: url(buttons/icons/white/diagnosticsicon.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 130px;
+    }
+    .dpf:hover {
+        background-image: url(buttons/icons/white/dpficon.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 130px;
+    }
+    .exhaust:hover {
+        background-image: url(buttons/icons/white/exhausticon.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 130px;
+    }
+    .mot:hover {
+        background-image: url(buttons/icons/white/moticon.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 130px;
+    }
+    .oil:hover {
+        background-image: url(buttons/icons/white/oilicon.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 130px;
+    }
+    .restoration:hover {
+        background-image: url(buttons/icons/white/restorationicon.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 130px;
+    }
+    .service:hover {
+        background-image: url(buttons/icons/white/serviceicon.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 130px;
+    }
+    .suspension:hover {
+        background-image: url(buttons/icons/white/suspensionicon.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 130px;
+    }
+    .tyres:hover {
+        background-image: url(buttons/icons/white/tyreicon.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 130px;
+    }
+    .welding:hover {
+        background-image: url(buttons/icons/white/weldingicon.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 130px;
+    }
+}
